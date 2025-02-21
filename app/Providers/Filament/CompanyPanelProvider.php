@@ -31,7 +31,7 @@ class CompanyPanelProvider extends PanelProvider
             ->path('company')
             ->login()
             ->registration()
-            ->tenant(Company::class)
+            ->tenant(Company::class, 'slug')
             ->tenantRegistration(RegisterTeam::class)
             ->colors([
                 'primary' => Color::Emerald,
